@@ -1,0 +1,368 @@
+/*Set font for the whole page and top border*/
+
+
+body {
+    font-family: FontAwesome, Helvetica, sans-serif;
+    border-top: 5px solid #ed5901;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 0px;
+    min-height: 99vh;
+}
+
+/*Since all lists, fieldsets and forms act show in a characteristic way in this page we define common properties here*/
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+form {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*Header styling*/
+header {
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding:10px 10%;
+}
+
+.logotype1 {
+    height: 10%;
+    width: auto;
+}
+
+.social-icons {
+
+    display: flex;
+    justify-content: space-between;
+    justify-content: end;
+    padding-left: 88px;
+}
+
+.separator-image {
+    display: flex;
+
+    overflow: hidden;
+
+}
+
+.awesome-image {
+    margin-bottom: -10%;
+    margin-top: -10%;
+    width: 100vw;
+    height: auto;
+}
+
+/*Main body (section & aside) division*/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 100/100vmin;
+}
+
+/*Main content styling*/
+
+.section {
+    max-width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 0;
+
+
+}
+
+.titlesAndBook {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titles {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.big-title {
+    color: #ed5901;
+    margin-bottom: 10%;
+
+
+
+    grid-area: bigTitle
+}
+
+.ebook {
+    margin-top:-5vmax;
+    margin-right: 5vmax;
+
+    height: 20vmax;
+    width: auto;
+
+    grid-area: ebook;
+}
+
+.little-title {
+    color: #b7b7b7;
+    margin-bottom:60px;
+
+    grid-area: littleTitle
+
+
+}
+
+.main-text {
+
+    justify-self: stretch;
+
+    grid-area: mainText;
+
+}
+
+.emphasizes {
+
+}
+
+
+a{
+    color: #ed5901;
+}
+
+/*Download form styling*/
+
+aside a {
+    text-decoration: none;
+
+}
+
+.form-title {
+    text-transform: uppercase;
+    color: #ed5901;
+    align-self: center;
+}
+
+.textfield {
+    height: 30px;
+}
+
+.form-submit-button {
+    background-color: #ed5901;
+    color: white;
+    text-transform: uppercase;
+
+    width: 90%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    box-shadow: 0px 0px 0px transparent;
+
+    border: 0px solid transparent;
+
+    text-shadow: 0px 0px 0px transparent;
+
+
+}
+
+.form-submit-button:hover {
+    background-color: #fd7701;
+    color: white;
+    text-transform: uppercase;
+
+    width: 90%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    box-shadow: 0px 0px 0px transparent;
+
+    border: 0px solid transparent;
+
+    text-shadow: 0px 0px 0px transparent;
+
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+    align-self: center;
+}
+
+
+/*Footer styling*/
+footer {
+  margin-top: auto;
+}
+
+.footer-frame {
+  align-self: flex-end;
+    background-color: #444444;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    color: #ffffff;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logotype2 {
+    height: 10%;
+    margin-top: 10px;
+    width: auto;
+}
+
+nav ul {
+    justify-content: flex-end;
+    padding-inline-start: 0px;
+}
+
+nav ul li {
+
+    margin-left: 0px;
+}
+
+
+.footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.item-list {
+    display: flex;
+}
+
+.footer-frame a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+small {
+    color: #ffffff;
+}
+
+
+aside {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    bottom: 80px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .caption {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .caption::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/*Show the pop-up with an animation*/
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+@media (max-width: 1230px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  titlesAndBook{
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  titles {
+    max-width: 100%;
+  }
+}
